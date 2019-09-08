@@ -6,5 +6,5 @@ RUN yum install -y java-1.8.0-openjdk
 RUN useradd java
 RUN mkdir java
 RUN cd java
-COPY entrypoint.sh
-ENTRYPOINT ["/opt/entrypoint.sh"]
+CMD ["/bin/bash"]
+
