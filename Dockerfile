@@ -7,7 +7,7 @@ RUN mkdir java
 RUN cd java
 RUN mkdir docker
 RUN cd docker
-RUN docker build -t javadocker:tag1 .
+RUN docker build -t javadocker:docker .
 RUN docker images
 CMD ["/bin/bash"]
 
