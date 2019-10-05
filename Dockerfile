@@ -5,9 +5,5 @@ RUN yum install -y java-1.8.0-openjdk
 RUN useradd java
 RUN mkdir java
 RUN cd java
-RUN mkdir docker
-RUN cd docker
-RUN docker build -t javadocker:docker .
-RUN docker images
 CMD ["/bin/bash"]
 
